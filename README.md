@@ -1,4 +1,4 @@
-# Dollar Bank — Customer Retention Dashboard
+# Fair Dinkum Bank — Customer Retention Dashboard
 
 A 5-tab Streamlit app: an overview of the business problem, then upload
 customer data → generate predictions → combine into one profile per customer

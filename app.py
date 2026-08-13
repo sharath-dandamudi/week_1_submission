@@ -1,5 +1,5 @@
 """
-Dollar Bank — Customer Retention Dashboard
+Fair Dinkum Bank — Customer Retention Dashboard
 =============================================
 Streamlit demo app. Business logic lives in logic.py (tested independently,
 see test_logic.py) -- this file only handles UI and session state.
@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 import logic
 
 st.set_page_config(
-    page_title="Dollar Bank — Customer Retention Dashboard",
+    page_title="Fair Dinkum Bank — Customer Retention Dashboard",
     page_icon="🏦",
     layout="wide",
 )
@@ -74,10 +74,10 @@ button[kind="primary"]:hover {
 }
 .topbanner .brandrow { display: flex; align-items: center; gap: 14px; }
 .topbanner .brandmark {
-    width: 38px; height: 38px; border-radius: 9px;
+    min-width: 38px; height: 38px; border-radius: 9px; padding: 0 8px;
     background: #1E88E5;
     display: flex; align-items: center; justify-content: center;
-    font-weight: 700; font-size: 16px; color: #FFFFFF;
+    font-weight: 700; font-size: 15px; color: #FFFFFF; letter-spacing: 0.5px;
     flex-shrink: 0;
 }
 .topbanner h1 { font-size: 18px; font-weight: 600; margin: 0; color: #FFFFFF; }
@@ -186,7 +186,7 @@ for key, default in {
 # Sidebar
 # ---------------------------------------------------------------------------
 with st.sidebar:
-    st.title("🏦 Dollar Bank")
+    st.title("🏦 Fair Dinkum Bank")
     st.caption("Predicting who's at risk, and why, before the call")
     st.divider()
 
@@ -210,9 +210,9 @@ with st.sidebar:
 st.markdown("""
 <div class="topbanner">
   <div class="brandrow">
-    <div class="brandmark">DB</div>
+    <div class="brandmark">FDB</div>
     <div>
-      <h1>Dollar Bank — Customer Retention Dashboard</h1>
+      <h1>Fair Dinkum Bank — Customer Retention Dashboard</h1>
       <div class="subtitle">Predicting who's at risk, and why, before the call</div>
     </div>
   </div>
@@ -234,7 +234,7 @@ tab0, tab1, tab2, tab3, tab4 = st.tabs([
 # ---------------------------------------------------------------------------
 with tab0:
     st.markdown(
-        '<div class="caveat-box">Dollar Bank is a fictitious company, and all data used in this '
+        '<div class="caveat-box">Fair Dinkum Bank is a fictitious company, and all data used in this '
         'prototype is synthetic. The business problem itself is real and product agnostic. '
         'Fragmented, reactive retention outreach with limited context for the frontline team is '
         'a pain point most consumer banks and subscription businesses face.</div>',
@@ -242,7 +242,7 @@ with tab0:
     )
 
     subsection_header("Situation")
-    st.markdown("Dollar Bank is seeing significant credit card churn, running at **roughly 20%**.")
+    st.markdown("Fair Dinkum Bank is seeing significant credit card churn, running at **roughly 20%**.")
 
     subsection_header("Problem")
     st.markdown(
