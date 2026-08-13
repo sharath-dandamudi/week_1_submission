@@ -1,0 +1,13 @@
+streamlit>=1.38
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+scipy==1.17.1
+joblib==1.5.3
+plotly>=5.20
+
+# Optional -- only needed for the "Regenerate with AI" button in the
+# Customer Action Center. The app works fully without it (falls back to
+# the free template-based combined motive + recommended action). Uncomment
+# to enable:
+# anthropic>=0.40
